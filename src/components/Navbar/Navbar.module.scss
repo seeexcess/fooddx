@@ -1,0 +1,68 @@
+@import "../../styles/abstract/variables.scss";
+@import "../../styles/base/base.scss";
+@import "../../styles/abstract/mixin.scss";
+
+.header {
+  &__nav {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $headerHeight;
+    //position: fixed;
+    //width: 100%;
+    //left: 0;
+    //padding: 0 5%;
+  }
+
+  &__navmenu {
+    border: 1px solid blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    transform: translate(0);
+    transition: all .5s ease;
+
+    @include breakpoint(md) {
+      position: static;
+      width: auto;
+      height: auto;
+      flex-direction: row;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      @include breakpoint(md) {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+    }
+
+    &.isMenu {
+      
+      transform: translate(100%);
+    }
+  }
+
+  &__navtoggle {
+    font-size: 2.5rem;
+    position: relative;
+    cursor: pointer;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+}
