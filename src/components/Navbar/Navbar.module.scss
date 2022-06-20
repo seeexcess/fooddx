@@ -4,7 +4,6 @@
 
 .header {
   &__nav {
-    border: 1px solid green;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,10 +12,21 @@
     //width: 100%;
     //left: 0;
     //padding: 0 5%;
+    
+
+    & span {
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: $font-head;
+      color: $color-dark;
+
+      &:last-of-type {
+        color: $color-primary;
+      }
+    }
   }
 
   &__navmenu {
-    border: 1px solid blue;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,6 +57,15 @@
       @include breakpoint(md) {
         flex-direction: row;
         gap: 1.5rem;
+      }
+
+      li {
+
+        a {
+          color: $color-primary;
+          font-size: 1.5rem;
+          font-family: $font-body;
+        }
       }
     }
 

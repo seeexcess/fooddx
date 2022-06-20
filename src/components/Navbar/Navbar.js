@@ -45,10 +45,10 @@ function Navbar() {
             <Link to="/" onClick={toggleMenu}>Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">About Us</Link>
           </li>
           <li>
-            <a href="#explore">Explore Food</a>
+            <a href="#explore">Explore Foods</a>
           </li>
           <li>
             <Link to="/reviews">Reviews</Link>

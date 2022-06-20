@@ -44,6 +44,9 @@ img {
   border: none;
   outline: none;
   background: orangered;
-  color: #fff;
+  color: $color-light;
   padding: .7rem 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 5px;
 }
