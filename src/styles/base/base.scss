@@ -1,3 +1,4 @@
+@import "../abstract/mixin.scss";
 @import "../abstract/variables.scss";
 
 *,
@@ -43,10 +44,16 @@ img {
 .btn {
   border: none;
   outline: none;
-  background: orangered;
+  background: $color-primary;
   color: $color-light;
   padding: .7rem 1.5rem;
   font-size: 1.6rem;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  @include breakpoint(sm) {
+    font-size: 1.4rem;
+    padding: .3rem .7rem;
+  }
 }

@@ -1,1 +1,85 @@
-@import "../../styles/variable.scss";
+@import "../../styles/abstract/variables.scss";
+@import "../../styles/base/base.scss";
+@import "../../styles/abstract/mixin.scss";
+
+.header {
+
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    margin: 5rem 0;
+  }
+
+  &__text {
+    
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: $font-head;
+    line-height: 1.2;
+    color: $color-dark;
+    width: 95%;
+
+    @include breakpoint(sm) {
+      font-size: 1.7rem;
+    }
+
+    @include breakpoint(md) {
+      font-size: 4.6rem;
+      width: 70%;
+    }
+  }
+
+  &__desc {
+    font-size: 1.6rem;
+    font-family: $font-body;
+    margin: 3rem 0;
+    width: 90%;
+
+    @include breakpoint(sm) {
+      font-size: 1.6rem;
+    }
+
+    @include breakpoint(md) {
+      width: 70%;
+    }
+  }
+
+  &__heroBtns {
+    display: flex;
+    gap: 1rem;
+
+    & button {
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      @include breakpoint(sm) {
+        font-size: 1rem;
+        gap: .2rem;
+        padding: .5rem 1rem;
+      }
+
+      @include breakpoint(md) {
+        font-size: 1.6rem;
+        padding: 1.4rem 1.8rem;
+      }
+
+      &:last-of-type {
+        background-color: $color-light;
+        color: $color-dark;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+      }
+    }
+  }
+
+  &__image {
+    min-width: 29rem;
+  }
+}
