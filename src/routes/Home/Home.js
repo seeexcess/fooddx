@@ -1,9 +1,10 @@
-import Header from "../../sections/Header/Header"
+import { Header, Savings } from "../../sections/index"
 
 function Home() {
   return (
     <>
       <Header />
+      <Savings />
     </>
   )
 }

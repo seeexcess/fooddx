@@ -80,6 +80,9 @@
   }
 
   &__image {
-    min-width: 29rem;
+    
+    @include breakpoint(md) {
+      min-width: 29rem;
+    }
   }
 }
