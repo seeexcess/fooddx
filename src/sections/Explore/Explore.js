@@ -1,10 +1,8 @@
-import classes from "./Explore.scss"
+import classes from "./Explore.module.scss"
 
 function Explore() {
   return (
-    <>
-      Explore
-    </>
+    <></>
   )
 }
 
