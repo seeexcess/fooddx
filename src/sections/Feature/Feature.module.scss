@@ -2,7 +2,27 @@
 @import "../../styles/base/base.scss";
 
 .feature {
+  background: $color-dark;
+  color: $color-light;
+  padding: 5rem 0;
 
+  &__container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    row-gap: 3rem;
 
-  &__container {}
+    @include breakpoint(md) {
+      justify-content: space-between;
+    }
+  }
+
+  &__heading {
+    font-size: 1.9rem;
+    font-family: $font-head;
+    font-weight: 700;
+  }
 }
