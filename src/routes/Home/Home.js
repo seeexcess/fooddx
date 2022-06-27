@@ -1,4 +1,4 @@
-import { Explore, Header, Ingredients, Savings, Story } from "../../sections/index"
+import { Explore, Faq, Feature, Footer, Header, Ingredients, Savings, Story, Subscribe, Testimonials } from "../../sections/index"
 
 function Home() {
   return (
@@ -8,6 +8,11 @@ function Home() {
       <Ingredients />
       <Story />
       <Explore />
+      <Testimonials />
+      <Faq />
+      <Feature />
+      <Subscribe />
+      <Footer />
     </>
   )
 }
