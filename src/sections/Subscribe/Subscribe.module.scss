@@ -4,5 +4,51 @@
 .subscribe {
 
 
-  &__container {}
+  &__container {
+    width: 50%;
+    padding: 5rem 0;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-family: $font-head;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__desc {
+    font-size: 1.5rem;
+    font-family: $font-body;
+    font-weight: 400;
+    line-height: 1.2;
+    color: $color-accent;
+    margin: 2rem 0;
+  }
+
+  &__form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    font-family: inherit;
+    color: inherit;
+    border: 2px solid $color-accent-2;
+    padding: .8rem 1rem;
+    width: 70%;
+
+    &::-webkit-input-placeholder {
+      color: $color-accent;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__btn {
+    font-size: 1.5rem;
+    font-family: $font-body;
+    font-weight: 500;
+  }
 }
