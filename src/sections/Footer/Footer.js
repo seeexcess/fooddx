@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom"
-
 import { FaCodepen } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 
