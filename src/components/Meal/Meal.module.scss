@@ -1,0 +1,13 @@
+@import "../../styles/abstract/variables.scss";
+@import "../../styles/base/base.scss";
+
+.meal {
+  margin: 0 auto;
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+  }
+}

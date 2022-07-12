@@ -2,8 +2,6 @@ import classes from "./Hero.module.scss"
 import { FaAngleRight } from "react-icons/fa";
 import { FaShoppingBasket } from "react-icons/fa";
 
-import food from "../../assets/food.svg"
-
 function Hero(){
   return (
     <>
@@ -21,7 +19,7 @@ function Hero(){
           </div>
         </div>
         <div className={classes.header__image}>
-          <img src={food} alt="meal" />
+          <img src="https://github.com/seeexcess/MenuDB/blob/gh-pages/food.svg/?raw=true" alt="meal" />
         </div>
       </div>
     </>
