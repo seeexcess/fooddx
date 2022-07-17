@@ -1,0 +1,61 @@
+@import "../../styles/abstract/variables.scss";
+@import "../../styles/base/base.scss";
+
+.ingredient {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  //row-gap: 2rem;
+  
+  &:not(:last-child) {
+    margin-bottom: 7rem;
+  }
+
+  @include breakpoint(md) {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 4rem;
+  }
+
+    &.reverse {
+      // img {
+      //   height: 35rem;
+      // }
+
+      @include breakpoint(md) {
+        flex-direction: row-reverse;
+      }
+    }
+
+  &__img {
+    width: 90%;
+    height: 35rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint(md) {
+      width: 60%;
+    }
+  }
+
+  &__section {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-family: $font-head;
+    font-size: 1.7rem;
+    font-weight: 700;
+
+    @include breakpoint(md) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__desc {
+    font-family: $font-body;
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+  }
+}

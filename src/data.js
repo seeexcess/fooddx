@@ -20,3 +20,18 @@ export const faqData = [
     description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language."
   }
 ]
+
+export const ingredientsData = [
+  {
+    id: "1",
+    title: "We pride ourselves on making real food from the best ingredients.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum amet leo.",
+    url: "https://github.com/seeexcess/MenuDB/blob/gh-pages/iMenuImg-1.svg/?raw=true"
+  },
+  {
+    id: "2",
+    title: "We make everything by hand with the best possible ingredients.",
+    description: "Mauris feugiat erat tellus. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    url: "https://github.com/seeexcess/MenuDB/blob/gh-pages/iMenuImg-2.svg/?raw=true"
+  }
+]
