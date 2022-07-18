@@ -1,3 +1,5 @@
+import Picture from "./assets/picture.svg"
+
 export const faqData = [
   {
     id: "1",
@@ -33,5 +35,26 @@ export const ingredientsData = [
     title: "We make everything by hand with the best possible ingredients.",
     description: "Mauris feugiat erat tellus. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
     url: "https://github.com/seeexcess/MenuDB/blob/gh-pages/iMenuImg-2.svg/?raw=true"
+  }
+]
+
+export const slidesData = [
+  {
+    imgUrl: Picture,
+    testimonial: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts Separated they live.",
+    name: "Chiranjit Hazarika",
+    profession: "- Web Designer"
+  },
+  {
+    imgUrl: Picture,
+    testimonial: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus harum rerum ad impedit earum.",
+    name: "Fred Green",
+    profession: "- Graphics Designer"
+  },
+  {
+    imgUrl: Picture,
+    testimonial: "Enim inventore voluptatum nihil perspiciatis non, tempora eos, rem doloribus facilis necessitatibus voluptas ipsam, illo placeat.",
+    name: "Ivy Ray",
+    profession: "- Fashion Designer"
   }
 ]

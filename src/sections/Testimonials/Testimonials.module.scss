@@ -2,7 +2,19 @@
 @import "../../styles/base/base.scss";
 
 .testimonials {
-
+  background: $color-primary;
+  padding: 5rem 0;
 
   &__container {}
+
+  &__titleBox {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 1.9rem;
+    font-family: $font-head;
+    font-weight: 500;
+    color: $color-light;
+  }
 }

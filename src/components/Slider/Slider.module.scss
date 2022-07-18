@@ -1,0 +1,59 @@
+@import "../../styles/abstract/variables.scss";
+@import "../../styles/base/base.scss";
+
+.slider {
+  background: $color-light;
+  padding: 5rem 0;
+  position: relative;
+  margin-top: 3rem;
+
+  &__slide {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+      width: 5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: $font-body;
+      font-weight: 300;
+    }
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: $color-primary;
+    font-size: 1.4rem;
+    font-family: $font-head;
+    font-weight: 700;
+    color: $color-light;
+    padding: .5rem 1rem;
+    cursor: pointer;
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+  }
+
+  &__switchbox {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-top: 1rem;
+
+    span {
+      color: $color-light;
+    }
+  }
+}
