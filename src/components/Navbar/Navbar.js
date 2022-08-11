@@ -8,9 +8,10 @@ import classes from "./Navbar.module.scss";
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false)
   const [size, setSize] = useState({
-    width: undefined,
-    height: undefined
+    width: window.innerWidth,
+    height: window.innerHeight
   })
+  console.log(size)
 
   function toggleMenu() {
     setOpenMenu((prevMenu) => !prevMenu)
@@ -30,8 +31,8 @@ function Navbar() {
   }, [])
 
   useEffect(() => {
-    if(size.width > 768) {
-      setOpenMenu(true)
+    if(size.width > 768 && openMenu) {
+      setOpenMenu(false)
     }
   }, [size.width, openMenu])
 
@@ -65,7 +66,7 @@ function Navbar() {
 
       <div className={classes.header__navtoggle}>
         {
-          openMenu ? <BiMenuAltRight onClick={toggleMenu}/> : <AiOutlineClose onClick={toggleMenu} />
+          openMenu ? <AiOutlineClose onClick={toggleMenu}/> : <BiMenuAltRight onClick={toggleMenu} />
         }
       </div>
     </nav>
